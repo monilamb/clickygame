@@ -29,7 +29,7 @@ class Squares extends Component {
     }
 
     clickImg = (number) => {
-        if (this.state.shuffledArray[number].beenClicked == false){
+        if (this.state.shuffledArray[number].beenClicked === false){
          this.state.shuffledArray[number].beenClicked = true;
          this.setState({points: (this.state.points + 1)});
          this.setState({shuffledArray: this.shuffling(this.state.shuffledArray)});
